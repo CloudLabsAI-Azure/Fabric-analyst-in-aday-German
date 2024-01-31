@@ -1,3 +1,5 @@
+![](./Media/4.40.png)
+
 # Inhalt
 
 - Einführung
