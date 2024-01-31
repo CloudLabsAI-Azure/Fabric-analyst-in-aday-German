@@ -33,19 +33,21 @@ Beginnen wir damit, eine geplante Aktualisierung des Verkaufs-Dataflows zu konfi
 
     ![](./Media/5.3.png)
 
->**Hinweis:** Die Seite „Einstellungen“ wird geöffnet. Im linken Bereich sind alle Dataflows aufgelistet.
+    >**Hinweis:** Die Seite „Einstellungen“ wird geöffnet. Im linken Bereich sind alle Dataflows aufgelistet.
 
 5. Wählen Sie im mittleren Bereich den Link **Verlauf aktualisieren** aus.
 
+   ![](./Media/5.4.png)
+
 1. Das Dialogfeld „Verlauf aktualisieren“ wird geöffnet. Es wird mindestens eine Aktualisierung aufgelistet. Hierbei handelt es sich um die Aktualisierung, die bei der Veröffentlichung des Dataflows erfolgt ist. Wählen Sie den Link **Startzeit** aus.
 
->**Hinweis:** Die Startzeit ist für Sie unterschiedlich.
+    >**Hinweis:** Die Startzeit ist für Sie unterschiedlich.
 
 ![](./Media/5.5.png)
 
 Der Detailbildschirm wird geöffnet. Hier erhalten Sie Details zur Aktualisierung sowie eine Liste mit Start-, Endzeit und Dauer. Außerdem werden die aktualisierten Tabellen/Aktivitäten aufgelistet. Falls ein Fehler auftritt, können Sie auf den Namen der Tabelle/Aktivität klicken, um mehr zu erfahren.
 
-![](./Media/5.4.png)
+![](./Media/5.6.png)
 
 7. Wir navigieren von dieser Seite weg, indem wir auf das **X** in der oberen rechten Ecke klicken. Sie werden zur **Seite „Dataflow-Einstellungen“** weitergeleitet.
 
@@ -65,7 +67,7 @@ Der Detailbildschirm wird geöffnet. Hier erhalten Sie Details zur Aktualisierun
 
 1. Legen Sie die **Zeitzone** auf Ihre bevorzugte Zeitzone fest.
 
->**Hinweis:** Da es sich um eine Übungsumgebung handelt, können Sie die Zeitzone auf Ihre bevorzugte Zeitzone festlegen. In einem realen Szenario legen Sie die Zeitzone basierend auf Ihrem/Speicherort der Datenquelle fest.
+    >**Hinweis:** Da es sich um eine Übungsumgebung handelt, können Sie die Zeitzone auf Ihre bevorzugte Zeitzone festlegen. In einem realen Szenario legen Sie die Zeitzone basierend auf Ihrem/Speicherort der Datenquelle fest.
 
 13. Klicken Sie auf den Link **Andere Uhrzeit hinzufügen**.
 
