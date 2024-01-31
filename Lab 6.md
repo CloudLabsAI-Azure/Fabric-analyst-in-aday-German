@@ -1,3 +1,5 @@
+![](./Media/6.1.png)
+
 ## Einführung
 
 Wir haben Daten aus verschiedene Datenquellen im Lakehouse erfasst. In dieser Übung arbeiten Sie mit dem Datenmodell. Üblicherweise werden Modellierungsarbeiten wie das Erstellen von Beziehungen, das Hinzufügen von Measures usw. in Power BI Desktop durchgeführt. Nun erfahren Sie, wie Sie diese Vorgänge im Dienst durchführen können.
