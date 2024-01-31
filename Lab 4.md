@@ -272,7 +272,7 @@ Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster an
 
 Sie werden zum **Bildschirm „Data Factory“** weitergeleitet. Erstellen wir nun einen Dataflow zur Erfassung der Daten aus SharePoint.
 
-# Aufgabe 9: SharePoint-Abfragen in Dataflow kopieren
+### Aufgabe 9: SharePoint-Abfragen in Dataflow kopieren
 
 1. Wählen Sie im Menü oben die Option **Neu -> Dataflow Gen2** aus.
 
@@ -296,7 +296,7 @@ Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow nun kenne
 
 Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung angezeigt, in der Sie aufgefordert werden, eine Verbindung zu konfigurieren.
 
-# Aufgabe 10: Verbindung zu SharePoint erstellen
+### Aufgabe 10: Verbindung zu SharePoint erstellen
 
 1. Wählen Sie **Verbindung konfigurieren** aus.
 
@@ -310,7 +310,7 @@ Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für SharePoint kein
 
    ![](./Media/4.30.png)
 
-# Aufgabe 11: Datenziel für die Abfrage „People“ konfigurieren
+### Aufgabe 11: Datenziel für die Abfrage „People“ konfigurieren
 
 Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster ansehen. Wenn Sie möchten, sehen Sie sich die angewandten Schritte der Abfragen an. Nun müssen die Personendaten im Lakehouse erfasst werden.
 
@@ -352,7 +352,7 @@ Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster an
 
     ![](./Media/4.35.png)
 
-# Aufgabe 12: SharePoint-Dataflow veröffentlichen und umbenennen
+### Aufgabe 12: SharePoint-Dataflow veröffentlichen und umbenennen
 
 1. Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie **unten rechts**, dass das Datenziel auf **Lakehouse** festgelegt ist.
 
@@ -376,7 +376,7 @@ Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster an
 
 Sie werden zum **Bildschirm „Data Factory“** weitergeleitet. Nun sind alle Daten im Lakehouse erfasst. In der nächsten Übung beschäftigen wir uns mit der Planung von Dataflow-Aktualisierungen.
 
-## Referenzen
+### Referenzen
 Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
 
    ![](./Media/4.39.png)
