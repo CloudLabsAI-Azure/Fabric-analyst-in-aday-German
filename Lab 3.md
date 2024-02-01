@@ -255,9 +255,7 @@ Hinweis: Warten Sie, bis die Abfrage vollständig geladen ist. Dies kann einige 
 
 Gehen wir die Schritte durch, um zu verstehen, wie Geo erstellt wurde. Wählen Sie im rechten Bereich unter „Angewendete Schritte“ die Option Quelle aus. Wenn Sie sich die Bearbeitungsleiste ansehen oder auf „Einstellungen“ klicken, stellen Sie fest, dass die Quelle dieser Abfrage eine Verknüpfung zwischen Cities und States ist. Wenn Sie die Schritte durchgehen, stellen Sie fest, dass das Ergebnis der ersten Verknüpfung wiederum mit „Countries“ verknüpft wird. Daher werden alle drei Abfragen verwendet, um eine Geo-Dimension zu erstellen. 
 
-A screenshot of Formula bar for Geo query 
-
- 
+IMAGE 3.33
 
 Aufgabe 8: Datenziel für die Abfrage „Geo“ konfigurieren 
 
@@ -265,7 +263,7 @@ Jetzt verfügen wir über eine Dimension. Lassen Sie uns diese Daten in Lakehous
 
 Wie bereits erwähnt, stellen wir keine dieser Daten bereit. Klicken Sie also mit der rechten Maustaste auf die Abfrage Cities, und wählen Sie Staging aktivieren aus, um das Häkchen zu entfernen. 
 
- A screenshot to disable Staging 
+IMAGE 3.34
 
 Befolgen Sie dieselben Schritte für die Abfrage Countries und Geo, um das Häkchen neben Staging aktivieren zu entfernen. 
 
@@ -275,11 +273,11 @@ Wählen Sie unten rechts „+“ neben Datenziel aus.
 
 Wählen Sie im Dialogfeld die Option Lakehouse aus. 
 
-A screenshot select Data Destination 
+IMAGE 3.35
 
 Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wir müssen eine neue Verbindung zu Lakehouse herstellen. Wenn Neue Verbindung erstellen im Dropdown-Menü „Verbindung“ ausgewählt und Authentifizierungsart auf Organisationskonto festgelegt ist, wählen Sie Weiter aus. 
 
-A screenshot of Connect to data destination 
+IMAGE 3.36 
 
 Nachdem die Verbindung hergestellt wurde, wird das Dialogfeld „Ziel auswählen“ geöffnet. Stellen Sie sicher, dass das Optionsfeld „Neue Tabelle“ ausgewählt ist, da wir eine neue Tabelle erstellen. 
 
@@ -291,7 +289,7 @@ Behalten Sie den Tabellennamen Geo bei.
 
 Wählen Sie Weiter aus. 
 
- A screenshot to Choose destination target 
+IMAGE 3.37
 
 Das Dialogfeld „Zieleinstellungen auswählen“ wird geöffnet. Bei jeder Aktualisierung von Dataflow Gen2 möchten wir einen vollständigen Ladevorgang durchführen. Stellen Sie sicher, dass Updatemethode auf Ersetzen festgelegt ist. 
 
@@ -303,7 +301,7 @@ Hinweis: Sie haben auch die Möglichkeit, Daten anzufügen. Wenn Sie diese Optio
 
 Mithilfe der Spaltenzuordnung können Dataflow-Spalten vorhandenen Spalten zugeordnet werden. In unserem Fall handelt es sich um eine neue Tabelle. Daher können wir die Standardwerte verwenden. Wählen Sie Einstellungen speichern aus. 
 
-A screenshot to Choose destination settings 
+IMAGE 3.38
 
 Hinweis: Wenn Sie einige der Spalten in Lakehouse nicht benötigen, verwenden Sie das Kontrollkästchen rechts neben der Quellspalte, um die nicht benötigten Spalten zu deaktivieren. 
 
@@ -315,15 +313,11 @@ Sie werden zum Power Query-Fenster weitergeleitet. Beachten Sie, dass unten rech
 
 Lassen Sie uns diese Abfragen veröffentlichen, damit wir Lakehouse überprüfen können. Wir werden darauf zurückkommen, um weitere Abfragen hinzuzufügen. Wählen Sie unten rechts Veröffentlichen aus. 
 
-A screenshot to Publish Dataflow 
-
- 
+IMAGE 3.39
 
 Sie werden zum Bildschirm „Data Factory“ weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird. Wählen Sie abschließend lh_FAIAD Lakehouse aus. 
 
- A screenshot to select Lakehouse 
-
- 
+IMAGE 3.40
 
 Sie werden zum Bildschirm „Lakehouse-Explorer“ weitergeleitet. Erweitern Sie im linken Bereich die Option lh_FAIAD -> Tables. 
 
@@ -331,7 +325,7 @@ Beachten Sie, dass jetzt eine Geo-Tabelle in Lakehouse vorhanden ist. Erweitern 
 
 Wählen Sie die Geo-Tabelle aus, sodass die Datenvorschau im rechten Bereich geöffnet wird. 
 
-A screenshot to explore Lakehouse tables 
+IMAGE 3.41 
 
 Es ist auch ein SQL-Endpunkt vorhanden, der zum Abfragen dieser Tabelle verwendet werden kann. Wir sehen uns diese Option in einer späteren Übung an. Da wir nun wissen, dass die Geodaten in Lakehouse vorhanden sind, fügen wir die restlichen Daten von ADLS Gen2 ein. 
 
@@ -343,7 +337,7 @@ Wählen Sie in der linken Menüleiste FAIAD_<Benutzername> aus, um zum Arbeitsbe
 
 Wir arbeiten mit Dataflow 1. Benennen wir es um, bevor wir fortfahren. Klicken Sie auf die Auslassungspunkte (…) neben Dataflow 1. Wählen Sie Eigenschaften aus. 
 
-A screenshot to select Dataflow1 Properties 
+IMAGE 3.42
 
 Das Dialogfeld „Dataflow-Eigenschaften“ wird geöffnet. Ändern Sie den Namen in df_Sales_ADLS. 
  
@@ -354,15 +348,13 @@ Fügen Sie im Textfeld Beschreibung den Text Dataflow to ingest Sales Data from 
 
 Wählen Sie Speichern aus. 
 
-A screenshot Dataflow Properties dialog 
-
- 
+IMAGE 3.43
 
 Aufgabe 11: Verbleibende Abfragen im Dataflow erstellen 
 
 Sie werden zum Bildschirm „Data Factory“ weitergeleitet. Wählen Sie den Dataflow df_Sales_ADLS aus, um zum Dataflow zurückzukehren. 
 
-A screenshot to select df_Sales_ADLS 
+IMAGE 3.44
 
 Zur Vereinfachung prüfen wir jetzt, ob wir die Abfragen aus Power BI Desktop kopieren können. 
 
@@ -394,13 +386,13 @@ Date
 
 Klicken Sie mit der rechten Maustaste, und wählen Sie Kopieren aus. 
 
-A screenshot to copy queries from Power Query window 
+IMAGE 3.45
 
 Navigieren zum Dataflow-Fenster des Browsers zurück zu df_Sales_ADLS. 
 
 Wählen Sie im linken Bereich den Bereich Abfragen aus, und geben Sie STRG+V ein (derzeit wird das Einfügen mit der rechten Maustaste nicht unterstützt). . 
 
- A screenshot copying queries to dataflow 
+IMAGE 3.46
 
 Wie bereits erwähnt, stellen wir keine dieser Daten bereit. Klicken Sie also mit der rechten Maustaste auf die folgenden Abfragen, und wählen Sie Staging aktivieren aus, um das Häkchen zu entfernen. 
 
@@ -417,7 +409,7 @@ Sales
  
 Hinweis: Wenn das Laden in Power BI Desktop deaktiviert ist, müssen wir das Staging in Dataflow nicht deaktivieren. Daher müssen wir das Staging für „Product Item Group“, „Product Groups“ usw. nicht deaktivieren. 
 
-A screenshot to disable Staging 
+IMAGE 3.47
 
 Stellen Sie sicher, dass alle Abfragen verarbeitet werden. Lassen Sie uns diese Daten abschließend in Lakehouse erfassen.  
 
@@ -431,7 +423,7 @@ Wählen Sie unten rechts „+“ neben Datenziel aus.
 
 Wählen Sie im Dialogfeld die Option Lakehouse aus. 
 
-A screenshot configure Data Destination for Product query 
+IMAGE 3.48
 
 Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wählen Sie im Dropdown-Menü „Verbindung“ die Option Lakehouse (keine) aus. 
 
@@ -439,7 +431,7 @@ Wählen Sie Weiter aus.
 
  
 
-A screenshot of Connect to data destination 
+IMAGE 3.49
 
  
 
@@ -453,7 +445,7 @@ Behalten Sie den Tabellennamen Product bei.
 
 Wählen Sie Weiter aus. 
 
-A screenshot of Choose destination target 
+IMAGE 3.50
 
  
 
@@ -463,7 +455,7 @@ Beachten Sie, dass die Warnung „Einige Spaltennamen enthalten nicht unterstüt
 
 Mithilfe der Spaltenzuordnung können Dataflow-Spalten vorhandenen Spalten zugeordnet werden. In unserem Fall handelt es sich um eine neue Tabelle. Daher können wir die Standardwerte verwenden. Wählen Sie Einstellungen speichern aus. 
 
-A screenshot of Choose destination settings 
+IMAGE 3.51
 
 Sie werden zum Power Query-Fenster weitergeleitet. Beachten Sie, dass unten rechts das Datenziel auf Lakehouse festgelegt ist. 
 
@@ -479,7 +471,7 @@ Sales
 
 Wir haben einen Dataflow, der Daten aus ADLS in Lakehouse erfasst. Fahren wir fort und veröffentlichen diesen Dataflow. Wählen Sie unten rechts Veröffentlichen aus. 
 
-A screenshot of dataflow to Publish 
+IMAGE 3.52
 
 Sie werden zurück zur Data Factory-Startseite weitergeleitet. Es dauert einige Minuten, bis der Dataflow aktualisiert wird. 
 
@@ -491,7 +483,7 @@ Referenzen
 
 Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen. 
 
-A screenshot of help options 
+IMAGE 3.53
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric. 
 
