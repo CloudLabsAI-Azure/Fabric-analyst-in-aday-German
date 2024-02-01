@@ -1,6 +1,6 @@
 ![](./Media/6.1.png)
 
-## Einführung
+# Einführung
 
 Wir haben Daten aus verschiedene Datenquellen im Lakehouse erfasst. In dieser Übung arbeiten Sie mit dem Datenmodell. Üblicherweise werden Modellierungsarbeiten wie das Erstellen von Beziehungen, das Hinzufügen von Measures usw. in Power BI Desktop durchgeführt. Nun erfahren Sie, wie Sie diese Vorgänge im Dienst durchführen können.
 
@@ -10,9 +10,9 @@ Inhalt dieser Übung:
 - SQL-Ansicht in Lakehouse
 - Datenmodellierung in Lakehouse
 
-## Lakehouse
+# Lakehouse
 
-### Aufgabe 1: Daten mithilfe von SQL abfragen
+## Aufgabe 1: Daten mithilfe von SQL abfragen
 
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich **FAIAD_\<username>**, den Sie in Übung 2, Aufgabe 8, erstellt haben.
 
@@ -50,7 +50,7 @@ Beachten Sie, dass Sie links die Tabellen anzeigen können. Wenn Sie diese erwei
 
     ![](./Media/6.4.png)
 
-### Aufgabe 2: T-SQL-Ergebnis veranschaulichen
+## Aufgabe 2: T-SQL-Ergebnis veranschaulichen
 
 1. Das Ergebnis der Abfrage kann auch bildlich veranschaulicht werden. **Markieren Sie die Abfrage** im Abfragebereich, und wählen Sie erst den Bereich **Ergebnisse** und dann **Visualisieren von Ergebnissen** aus.
 
@@ -80,7 +80,7 @@ Beachten Sie, dass Sie links die Tabellen anzeigen können. Wenn Sie diese erwei
 
     ![](./Media/6.7.png)
 
-### Aufgabe 3: visuelle Abfrage erstellen
+## Aufgabe 3: visuelle Abfrage erstellen
 
 Sie werden zur Ansicht von SQL-Analyse-Endpunkten weitergeleitet. Wenn Sie SQL nicht kennen, können Sie eine ähnliche Abfrage mithilfe einer visuellen Abfrage durchführen.
 
@@ -134,7 +134,7 @@ Sie werden zur Ansicht von SQL-Analyse-Endpunkten weitergeleitet. Wenn Sie SQL n
 
     >**Hinweis:** Siehe hierzu den ersten Screenshot in Aufgabe 4.
 
-### Aufgabe 4: Abfrageergebnisse visualisieren
+## Aufgabe 4: Abfrageergebnisse visualisieren
 
 1. Nachdem die Abfrage nun fertig ist, sehen wir uns das Ergebnis an. Wählen Sie im Ergebnisbereich die Option **Visualisieren von Ergebnissen** aus.
 
@@ -146,7 +146,7 @@ Sie werden zur Ansicht von SQL-Analyse-Endpunkten weitergeleitet. Wenn Sie SQL n
 
     ![](./Media/6.14.png)
 
-### Aufgabe 5: Beziehungen erstellen
+## Aufgabe 5: Beziehungen erstellen
 
 Nun können wir das Modell erstellen, Beziehungen zwischen Tabellen festlegen und Measures vorgeben.
 
@@ -190,7 +190,7 @@ Nun können wir das Modell erstellen, Beziehungen zwischen Tabellen festlegen un
 
 Aus Zeitgründen können wir nicht alle Beziehungen erstellen. Sofern Zeit verbleibt, können Sie den fakultativen Abschnitt am Ende der Übung durcharbeiten. Darin werden die restlichen Beziehungen erstellt.
 
-### Aufgabe 6: Measures erstellen
+## Aufgabe 6: Measures erstellen
 
 Ergänzen wir ein paar Measures, die zur Erstellung des Sales-Dashboards benötigt werden.
 
@@ -242,7 +242,7 @@ Aus Zeitgründen können wir nicht alle Measures erstellen. Sofern Zeit verbleib
 
 Nachdem das Datenmodell jetzt erstellt wurde, erstellen wir nun einen Bericht. Dazu arbeiten wir die nächste Übung durch.
 
-### Aufgabe 7: Fakultativer Abschnitt – Beziehungen erstellen
+## Aufgabe 7: Fakultativer Abschnitt – Beziehungen erstellen
 
 Ergänzen wir die restlichen Beziehungen.
 
@@ -326,7 +326,7 @@ Nun sind alle Beziehungen erstellt.
 
 ![](./Media/6.28.png)
 
-### Aufgabe 8: Fakultativer Abschnitt – Measures erstellen
+## Aufgabe 8: Fakultativer Abschnitt – Measures erstellen
 
 Ergänzen wir die restlichen Measures.
 

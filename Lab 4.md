@@ -40,9 +40,9 @@ Hinweis: Ein einziger Dataflow berücksichtigt dabei mehrere Datenquellen.
 - Mit Dataflow Gen2 eine Verbindung zu SharePoint herstellen und Daten im Lakehouse erfassen
 - Mit Dataflow Gen2 eine Verbindung zu Dataverse herstellen und Daten im Lakehouse erfassen
 
-## Dataflow Gen2
+# Dataflow Gen2
 
-### Aufgabe 1: Snowflake-Abfragen in Dataflow kopieren
+## Aufgabe 1: Snowflake-Abfragen in Dataflow kopieren
 1. Wechseln wir zurück zum Fabric-Arbeitsbereich **FAIAD_<Benutzername>**, den Sie in Aufgabe 8 von Übung 2 erstellt haben.
 
 2. Wählen Sie im Menü oben die Option **Neu -> Dataflow Gen2 aus**.
@@ -73,7 +73,7 @@ Hinweis: Ein einziger Dataflow berücksichtigt dabei mehrere Datenquellen.
 
 8. Wählen Sie im Bereich **Dataflow** den **mittleren Bereich** aus, und drücken Sie **Strg+V** (das Einfügen mittels Rechtklick ist derzeit nicht möglich).
 
-### Aufgabe 2: Verbindung zu Snowflake erstellen
+## Aufgabe 2: Verbindung zu Snowflake erstellen
 Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „Abfragen“ jetzt links ist. Weil für Snowflake keine Verbindung erstellt wurde, wird eine Warnmeldung angezeigt, in der Sie aufgefordert werden, eine Verbindung zu konfigurieren.
 
 1. Wählen Sie **Verbindung konfigurieren** aus.
@@ -99,7 +99,7 @@ Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster an
 
 **Hinweis:** Bei den anderen drei Abfragen muss das Staging nicht deaktiviert werden, weil die Option „Laden aktivieren“ in Power BI Desktop (aus dem diese Abfragen kopiert wurden) deaktiviert war.
 
-### Aufgabe 3: Datenziel für die Abfragen „Supplier“ und „PO“ konfigurieren
+## Aufgabe 3: Datenziel für die Abfragen „Supplier“ und „PO“ konfigurieren
 
 1. Wählen Sie die Abfrage **Supplier** aus.
 2. Wählen Sie unten rechts **„+“** neben Datenziel aus.
@@ -130,7 +130,7 @@ Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster an
 
     ![](./Media/4.10.png)
 
-### Aufgabe 4: Snowflake-Dataflow umbenennen und veröffentlichen
+## Aufgabe 4: Snowflake-Dataflow umbenennen und veröffentlichen
 
 1. Wählen Sie oben auf dem Bildschirm den **Pfeil neben Dataflow 1** aus.
 2. Ändern Sie im Dialogfeld den Namen in **df_Supplier_Snowflake**.
@@ -160,7 +160,7 @@ Sie werden zum **Bildschirm „Data Factory“** weitergeleitet. Es kann einige 
 
 Sie werden zum **Bildschirm „Data Factory“** weitergeleitet. Erstellen wir nun einen Dataflow zur Erfassung der Daten aus Dataverse.
 
-### Aufgabe 5: Dataverse-Abfragen in Dataflow kopieren
+## Aufgabe 5: Dataverse-Abfragen in Dataflow kopieren
 
 1. Wählen Sie im Menü oben die Option **Neu -> Dataflow Gen2** aus.
 
@@ -190,7 +190,7 @@ Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow nun kenne
 7. Drücken Sie im Bereich **Dataflow** auf **Strg+V** (das Einfügen mittels Rechtsklick ist derzeit nicht möglich).
 
 
-### Aufgabe 6: Verbindung zu Dataverse erstellen
+## Aufgabe 6: Verbindung zu Dataverse erstellen
 
 Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „Abfragen“ jetzt links ist. Weil für Dataverse keine Verbindung erstellt wurde, wird eine Warnmeldung angezeigt, in der Sie aufgefordert werden, eine Verbindung zu konfigurieren.
 
@@ -206,7 +206,7 @@ Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „
 
    ![](./Media/4.18.png)
 
-### Aufgabe 7: Datenziel für die Abfrage „Customer“ erstellen
+## Aufgabe 7: Datenziel für die Abfrage „Customer“ erstellen
 
 Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster ansehen. Wenn Sie möchten, sehen Sie sich die angewandten Schritte der Abfragen an. Kundendaten sind nach Kategorie verfügbar: BabyBoomer, GenX, GenY und GenZ. Diese vier Abfragen werden angehängt, um die Customer-Abfrage zu erstellen. Nun müssen die Kundendaten im Lakehouse erfasst werden.
 
@@ -248,7 +248,7 @@ Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster an
 
     ![](./Media/4.23.png)
 
-### Aufgabe 8: Dataverse-Dataflow veröffentlichen und umbenennen
+## Aufgabe 8: Dataverse-Dataflow veröffentlichen und umbenennen
 
 1. Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie unten rechts, dass das **Datenziel** auf **Lakehouse** festgelegt ist.
 
@@ -272,7 +272,7 @@ Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster an
 
 Sie werden zum **Bildschirm „Data Factory“** weitergeleitet. Erstellen wir nun einen Dataflow zur Erfassung der Daten aus SharePoint.
 
-### Aufgabe 9: SharePoint-Abfragen in Dataflow kopieren
+## Aufgabe 9: SharePoint-Abfragen in Dataflow kopieren
 
 1. Wählen Sie im Menü oben die Option **Neu -> Dataflow Gen2** aus.
 
@@ -296,7 +296,7 @@ Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow nun kenne
 
 Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung angezeigt, in der Sie aufgefordert werden, eine Verbindung zu konfigurieren.
 
-### Aufgabe 10: Verbindung zu SharePoint erstellen
+## Aufgabe 10: Verbindung zu SharePoint erstellen
 
 1. Wählen Sie **Verbindung konfigurieren** aus.
 
@@ -310,7 +310,7 @@ Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für SharePoint kein
 
    ![](./Media/4.30.png)
 
-### Aufgabe 11: Datenziel für die Abfrage „People“ konfigurieren
+## Aufgabe 11: Datenziel für die Abfrage „People“ konfigurieren
 
 Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster ansehen. Wenn Sie möchten, sehen Sie sich die angewandten Schritte der Abfragen an. Nun müssen die Personendaten im Lakehouse erfasst werden.
 
@@ -352,7 +352,7 @@ Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster an
 
     ![](./Media/4.35.png)
 
-### Aufgabe 12: SharePoint-Dataflow veröffentlichen und umbenennen
+## Aufgabe 12: SharePoint-Dataflow veröffentlichen und umbenennen
 
 1. Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie **unten rechts**, dass das Datenziel auf **Lakehouse** festgelegt ist.
 
@@ -376,7 +376,7 @@ Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster an
 
 Sie werden zum **Bildschirm „Data Factory“** weitergeleitet. Nun sind alle Daten im Lakehouse erfasst. In der nächsten Übung beschäftigen wir uns mit der Planung von Dataflow-Aktualisierungen.
 
-### Referenzen
+## Referenzen
 Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
 
    ![](./Media/4.39.png)
@@ -420,6 +420,7 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
 
 Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den folgenden Bedingungen zu:
+
 Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur verwenden, um derartige Technologiefeatures und Funktionen zu bewerten und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu verbreiten, zu übertragen, anzuzeigen, auszuführen, zu vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
 
 DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.

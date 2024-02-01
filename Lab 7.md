@@ -30,7 +30,7 @@
 
 - Referenzen
 
-## Einführung 
+# Einführung 
 
 Wir haben Daten aus verschiedenen Datenquellen in Lakehouse erfasst, eine Einführung in Lakehouse erhalten, ein Datenmodell erstellt und einen Aktualisierungsplan für die Datenquellen festgelegt. Jetzt erstellen wir einen Bericht.
 
@@ -39,9 +39,9 @@ Inhalt dieser Übung:
 - So erstellen Sie einen Bericht von einem leeren Canvas ausgehend
 - So erkunden Sie den Direct Lake-Modus, in dem Daten automatisch aktualisiert werden
 
-## Power BI
+# Power BI
 
-### Aufgabe 1: Bericht automatisch erstellen
+## Aufgabe 1: Bericht automatisch erstellen
 
 Verwenden wir zunächst die Option „Bericht automatisch erstellen“. Und später in der Übung werden wir den Bericht, den wir in Power BI haben, neu erstellen.
 
@@ -95,7 +95,7 @@ Verwenden wir zunächst die Option „Bericht automatisch erstellen“. Und spä
 
     ![](./Media/7.7.png)
 
-### Aufgabe 2: Standardtabellen (Metriken) ausblenden
+## Aufgabe 2: Standardtabellen (Metriken) ausblenden
 
 Erstellen wir einen Bericht wie den in Power BI Desktop. Dazu beginnen wir mit einem leeren Canvas. Bevor wir mit der Erstellung eines Berichts beginnen, entfernen wir die Standardtabellen (siehe Screenshot oben) aus der Berichtsansicht. Dies erfolgt im Modellierungsabschnitt von Lakehouse.
 
@@ -129,7 +129,7 @@ Beachten Sie, dass sich die Standardtabellen im Designcanvas befinden. (Sie müs
     
     d. frequently_run_queries
 
-### Aufgabe 3: Hintergrund für einen neuen Bericht konfigurieren
+## Aufgabe 3: Hintergrund für einen neuen Bericht konfigurieren
 
 1. Jetzt können wir einen neuen Bericht übe die Modellansicht erstellen. Wählen Sie im oberen Menü **Start -> Neuer Bericht** aus. Sie werden zum Power BI-Berichtscanvas in einem neuen Fenster/einer neuen Registerkarte in Ihrem Browser weitergeleitet.
 
@@ -161,7 +161,7 @@ Wir werden diesen Bericht als Referenz verwenden. Wir fügen zunächst den Canva
     ![](./Media/7.13.png)
  
 
-### Aufgabe 4: Dem Bericht eine Kopfzeile hinzufügen
+## Aufgabe 4: Dem Bericht eine Kopfzeile hinzufügen
 
 1. Wir fügen nun die Kopfzeile am oberen Rand hinzu. Wählen Sie im **Menü** die Option **Textfeld** aus.
 
@@ -182,7 +182,7 @@ Wir werden diesen Bericht als Referenz verwenden. Wir fügen zunächst den Canva
     ![](./Media/7.14.png)
  
 
-### Aufgabe 5: Dem Bericht KPIs hinzufügen
+## Aufgabe 5: Dem Bericht KPIs hinzufügen
 
 1. Fügen wir nun Verkauf-KPI hinzu. Wählen Sie den **Leerraum** im Canvas aus, um den Fokus vom Textfeld zu entfernen.
 
@@ -235,7 +235,7 @@ Wir werden diesen Bericht als Referenz verwenden. Wir fügen zunächst den Canva
     ![](./Media/7.19.png)
 
 
-### Aufgabe 6: Dem Bericht ein Liniendiagramm hinzufügen
+## Aufgabe 6: Dem Bericht ein Liniendiagramm hinzufügen
 
 Lassen Sie uns ein Liniendiagramm erstellen, um Sales im Zeitverlauf nach Reseller Company zu visualisieren.
 1. Wählen Sie den **Leerraum** im Canvas aus, um den Fokus vom mehrzeiligen Kartenvisual zu entfernen.
@@ -245,7 +245,7 @@ Lassen Sie uns ein Liniendiagramm erstellen, um Sales im Zeitverlauf nach Resell
   
     ![](./Media/7.20.png)
 
-### Aufgabe 7: Spalte „Year“ in der Tabelle „Date“ konfigurieren
+## Aufgabe 7: Spalte „Year“ in der Tabelle „Date“ konfigurieren
 
 1. Navigieren Sie über die **Modellansicht von Lakehouse** zur Registerkarte des Browsers.
 2. Erweitern Sie im linken Explorer-Bereich **lhFAIAD -> Schemas -> dbo -> Tables -> Date**.
@@ -263,7 +263,7 @@ Lassen Sie uns ein Liniendiagramm erstellen, um Sales im Zeitverlauf nach Resell
  
     ![](./Media/7.22.png)
 
-### Aufgabe 8: Die Spalte „Short_Month_Name“ in der Tabelle „Date“ konfigurieren
+## Aufgabe 8: Die Spalte „Short_Month_Name“ in der Tabelle „Date“ konfigurieren
 
 1. Fügen wir diesem Diagramm „Monat“ hinzu. Ziehen Sie das Feld **Short_Month_Name** unter **Year** aus der Tabelle „Date“ in die **X-Achse**. Beachten Sie dass das Visual nach „Sales“ sortiert ist. Nun sortieren wir es nach Short_Month_Name.
 2. Wählen Sie die **Auslassungspunkte (…)** oben rechts im Visual aus.
@@ -292,7 +292,7 @@ Lassen Sie uns ein Liniendiagramm erstellen, um Sales im Zeitverlauf nach Resell
     ![](./Media/7.26.png)
   
 
-### Aufgabe 9: Liniendiagramm formatieren
+## Aufgabe 9: Liniendiagramm formatieren
 Beachten Sie, wie einfach es ist, das semantische Modell beim Erstellen der Berichte zu aktualisieren. Daraus ergibt sich eine nahtlose Interaktion wie Power BI Desktop.
 
 1. Wenn das **Visual „Liniendiagramm“ ausgewählt ist**, erweitern Sie im Abschnitt **Daten** die Tabelle **Reseller**.
@@ -333,7 +333,7 @@ Beachten Sie, wie einfach es ist, das semantische Modell beim Erstellen der Beri
  
 Wie bereits erwähnt, werden wir nicht alle Visuals in dieser Übung erstellen. Sie können nach Belieben weitere Visuals erstellen. 
 
-### Aufgabe 10: Neue Daten hinzufügen, um den Direct Lake-Modus zu simulieren
+## Aufgabe 10: Neue Daten hinzufügen, um den Direct Lake-Modus zu simulieren
 Normalerweise müssen wir im Import-Modus, sobald die Daten in der Quelle aktualisiert wurden, das Power BI-Modell aktualisieren, woraufhin die Daten im Bericht aktualisiert werden. Im Direct Query-Modus sind die Daten im Power BI-Bericht verfügbar, nachdem sie in der Quelle aktualisiert wurden. Der Direct Query-Modus ist in der Regel jedoch langsam. Um dieses Problem zu beheben, hat Microsoft Fabric den Direct Lake-Modus eingeführt. Direct Lake ermöglicht das schnelle Laden der Daten aus dem Lake direkt in das Power BI-Modul, wo sie für die Analyse bereit sind. Untersuchen wir dies genauer.
 
 In einem realen Szenario werden die Daten an der Quelle aktualisiert. Da wir uns in einer Trainingsumgebung befinden, simulieren wir dies, indem wir eine Verbindung mit einer Parquet-Datei mit Daten für Mai 2023 herstellen.
@@ -419,7 +419,7 @@ Wir haben festgestellt, dass Dataflows effizient und einfach zu ändern sind. Da
 
 Microsoft Fabric ist ein SaaS-Angebot. Wir benötigen lediglich einen Browser, um auf den Dienst zuzugreifen. Wir müssen keine Software auf unseren Desktops installieren.
 
-### Übungsumgebung bereinigen
+## Übungsumgebung bereinigen
 
 Wenn Sie bereit sind, die Übungsumgebung zu bereinigen, führen Sie die folgenden Schritte aus.
 

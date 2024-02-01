@@ -1,7 +1,7 @@
 
 ![](./Media/5.1.png)
 
-## Einführung
+# Einführung
 
 Wir haben Daten aus verschiedenen Datenquellen in Lakehouse erfasst. In dieser Übung richten Sie einen Aktualisierungszeitplan für die Datenquellen ein. Zusammenfassung der Anforderung:
 
@@ -15,9 +15,9 @@ Inhalt dieser Übung:
 - So erstellen Sie eine Datenpipeline
 - So konfigurieren Sie eine geplante Aktualisierung einer Datenpipeline
 
-## Dataflow Gen2
+# Dataflow Gen2
 
-### Aufgabe 1: Geplante Aktualisierung für den Verkaufs-Dataflow konfigurieren
+## Aufgabe 1: Geplante Aktualisierung für den Verkaufs-Dataflow konfigurieren
 
 Beginnen wir damit, eine geplante Aktualisierung des Verkaufs-Dataflows zu konfigurieren.
 
@@ -83,7 +83,7 @@ Der Detailbildschirm wird geöffnet. Hier erhalten Sie Details zur Aktualisierun
 
 Sie können auch Fehlerbenachrichtigungen an den Besitzer des Dataflows und an andere Kontakte senden.
 
-### Aufgabe 2: Geplante Aktualisierung für den Lieferanten- und Kunden-Dataflow konfigurieren
+## Aufgabe 2: Geplante Aktualisierung für den Lieferanten- und Kunden-Dataflow konfigurieren
 
 1. Wählen Sie im linken Bereich **df_Supplier_Snowflake** aus.
 
@@ -103,9 +103,9 @@ Sie können auch Fehlerbenachrichtigungen an den Besitzer des Dataflows und an a
 
 Wie bereits erwähnt, müssen wir eine benutzerdefinierte Logik erstellen, um das Szenario zu handhaben, in dem die Mitarbeiterdatei in SharePoint nicht rechtzeitig gesendet wird. Wir verwenden die Datenpipeline, um dieses Problem zu beheben.
 
-## Datenpipeline
+# Datenpipeline
 
-### Aufgabe 3: Datenpipeline erstellen
+## Aufgabe 3: Datenpipeline erstellen
 
 1. Wählen Sie **unten links** in Ihrem Browserfenster **Power BI** aus.
 
@@ -141,7 +141,7 @@ Sie befinden sich auf dem Startbildschirm. Im oberen Menü finden Sie Optionen z
 
 ![](./Media/5.15.png)
 
-### Aufgabe 4: Einfache Datenpipeline erstellen
+## Aufgabe 4: Einfache Datenpipeline erstellen
 
 Beginnen wir mit der Erstellung der Pipeline. Wir benötigen eine Aktivität, um den Dataflow zu aktualisieren. Lassen Sie uns nach einer Aktivität suchen, die wir verwenden können.
 
@@ -187,7 +187,7 @@ Beachten Sie, welchen Vorteil die Verwendung der Datenpipeline im Vergleich zur 
 
 - Die Pipeline ermöglicht eine Aktualisierung innerhalb von Sekunden, während beim Dataflow alle 30 Minuten eine geplante Aktualisierung erfolgt.
 
-### Aufgabe 5: Neue Datenpipeline erstellen
+## Aufgabe 5: Neue Datenpipeline erstellen
 
 Fügen wir unserem Szenario etwas mehr Komplexität hinzu. Wir haben festgestellt, dass, wenn die Daten nicht um 9:00 Uhr morgens verfügbar sind, sie in der Regel innerhalb von fünf Minuten verfügbar sind. Wird das Zeitfenster verpasst, dauert es 15 Minuten, bis die Datei verfügbar ist. Wir möchten die Wiederholungen so planen, dass sie alle 5 und 15 Minuten erfolgen. Sehen wir uns an, wie dies durch die Erstellung einer neuen Datenpipeline erreicht werden kann.
 
@@ -201,7 +201,7 @@ Fügen wir unserem Szenario etwas mehr Komplexität hinzu. Wir haben festgestell
 
     ![](./Media/5.18.png)
 
-### Aufgabe 6: Bis-Aktivität erstellen
+## Aufgabe 6: Bis-Aktivität erstellen
 
 1. Sie werden zum Bildschirm „Datenpipeline“ weitergeleitet. Wählen Sie im Menü die Option **Aktivitäten** aus.
 
@@ -215,7 +215,7 @@ In unserem Szenario erfolgt die Iteration des Dataflows so lange, bis er erfolgr
 
 ![](./Media/5.19.png)
 
-### Aufgabe 7: Variablen erstellen
+## Aufgabe 7: Variablen erstellen
 
 1. Wir müssen Variablen für die Iteration und Festlegung des Status festlegen. Wählen Sie den **leeren Bereich** im Bereich für Pipelinedesign aus.
 
@@ -247,7 +247,7 @@ In unserem Szenario erfolgt die Iteration des Dataflows so lange, bis er erfolgr
     - **varSuccess** vom Typ **String** und Standardwert **Yes**. Diese Variable wird verwendet, um den Wert „varIsSuccess“ festzulegen, wenn die Dataflow-Aktualisierung erfolgreich ist.
     - **varWaitTime** vom Typ **Integer** und Standardwert **60**. Mit dieser Variablen wird die Wartezeit festgelegt, wenn der Dataflow fehlschlägt (entweder 5 Minuten/300 Sekunden oder 15 Minuten/900 Sekunden).
 
-### Aufgabe 8: Bis-Aktivität konfigurieren
+## Aufgabe 8: Bis-Aktivität konfigurieren
 
 1. Wählen Sie die **Bis**-Aktivität aus.
 
@@ -325,7 +325,7 @@ Wir müssen einen Ausdruck schreiben, der so lange ausgeführt wird, bis der Wer
 
     ![](./Media/5.29.png)
 
-### Aufgabe 9: Dataflow-Aktivität konfigurieren
+## Aufgabe 9: Dataflow-Aktivität konfigurieren
 
 1. Sie werden zum Designbildschirm weitergeleitet. Wählen Sie bei ausgewählter **Bis-Aktivität** im **unteren Bereich** die Option **Aktivitäten** aus. Wir fügen nun die Aktivitäten hinzu, die ausgeführt werden müssen.
 
@@ -351,7 +351,7 @@ Wir müssen einen Ausdruck schreiben, der so lange ausgeführt wird, bis der Wer
 
     ![](./Media/5.32.png)
 
-### Aufgabe 10: Erste Aktivität „Variable festlegen“ konfigurieren
+## Aufgabe 10: Erste Aktivität „Variable festlegen“ konfigurieren
 
 Wir haben die Dataflow-Aktivität wie zuvor in der Übung konfiguriert. Nun fügen wir neue Logik hinzu. Wenn die Dataflow-Aktualisierung erfolgreich ist, müssen wir den Bis-Iterator beenden. Bedenken Sie, dass eine der Bedingungen für die Beendigung des Iterators darin besteht, den Wert der Variablen „varIsSuccess“ auf „Ja“ festzulegen.
 
@@ -394,7 +394,7 @@ Wir haben die Dataflow-Aktivität wie zuvor in der Übung konfiguriert. Nun füg
 
 Nun müssen wir den Zähler festlegen, wenn die Dataflow-Aktivität fehlschlägt. In der Datenpipeline können wir keine Selbstreferenz für eine Variable festlegen. Das bedeutet, dass wir die Zählervariable „varCounter“ nicht inkrementieren können, indem wir ihr den Wert eins hinzufügen (varCounter = varCounter + 1). Daher nutzen wir die Variable „varTempCounter“.
 
-### Aufgabe 11: Zweite Aktivität „Variable festlegen“ konfigurieren
+## Aufgabe 11: Zweite Aktivität „Variable festlegen“ konfigurieren
 
 1. Wählen Sie im oberen Menü **Aktivitäten -> Variable festlegen** aus. Die Aktivität „Variable festlegen“ wird dem Designcanvas hinzugefügt.
 
@@ -426,7 +426,7 @@ Nun müssen wir den Zähler festlegen, wenn die Dataflow-Aktivität fehlschlägt
 
 Nun müssen wir den Wert der Variablen „varCounter“ auf den Wert „varTempCounter“ festlegen.
 
-### Aufgabe 12: Dritte Aktivität „Variable festlegen“ konfigurieren
+## Aufgabe 12: Dritte Aktivität „Variable festlegen“ konfigurieren
 
 1. Wählen Sie im oberen Menü **Aktivitäten -> Variable festlegen** aus. Die Aktivität „Variable festlegen“ wird dem Designcanvas hinzugefügt.
 
@@ -454,7 +454,7 @@ Nun müssen wir den Wert der Variablen „varCounter“ auf den Wert „varTempC
 
     ![](./Media/5.39.png)
 
-### Aufgabe 13: Wait-Aktivität konfigurieren
+## Aufgabe 13: Wait-Aktivität konfigurieren
 
 Als nächstes müssen wir 5 Minuten/300 Sekunden warten, wenn die Dataflow-Aktualisierung beim ersten Mal fehlschlägt, bevor wir es erneut versuchen. Wenn die Dataflow-Aktualisierung zum zweiten Mal fehlschlägt, müssen wir 15 Minuten/900 Sekunden warten, und es erneut versuchen. Wir verwenden die Wait-Aktivität und die Variable „varWaitTime“, um die Wartezeit festzulegen.
 
@@ -510,7 +510,7 @@ Der Ausdruck ist eine geschachtelte if-Anweisung. Hiermit wird überprüft, ob d
 
     ![](./Media/5.44.png)
 
-### Aufgabe 14: Geplante Aktualisierung für die Datenpipeline konfigurieren
+## Aufgabe 14: Geplante Aktualisierung für die Datenpipeline konfigurieren
 
 1. Wir können die Datenpipeline testen, indem wir **Startseite -> Ausführen** auswählen.
 

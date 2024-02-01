@@ -35,7 +35,6 @@ Inhalt dieser Übung:
 2. Geben Sie die vom Kursleiter genannte **E-Mail-Adresse** ein, und klicken Sie auf **Senden**.
 
    ![](./Media/2.2.png)
-
  
 3. Die Seite **Kennwort** wird angezeigt. Geben Sie das Kennwort ein, das Sie vom Kursleiter erhalten haben. 
 
@@ -43,8 +42,6 @@ Inhalt dieser Übung:
 
     ![](./Media/2.3.png)
 
-
- 
 5. Sie werden zur bereits bekannten **Startseite des Power BI-Dienstes** geleitet.
 6. Es wird angenommen, dass Ihnen der Aufbau des Power BI-Dienstes bekannt ist. Bei Fragen wenden Sie sich einfach an den Kursleiter.
 

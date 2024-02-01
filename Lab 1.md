@@ -29,10 +29,9 @@ Um wertvolle Erkenntnisse aus den Daten zu ziehen, rufen Sie Daten aus mehreren 
 
     ![](./Media/1.2.png)
  
-
 Derzeit arbeiten Sie an einem Dataset in Power BI Premium, mit dem die Daten aus den oben genannten Quellsystemen abgerufen werden sollen, damit Sie Ihre Berichte schreiben können und Endanwender die Möglichkeit erhalten, Self-Service-Angebote zu nutzen. Das Modell aktualisieren Sie mit Power Query. 
 
-#### Nun sind Sie mir folgenden Problemen konfrontiert:
+### Nun sind Sie mir folgenden Problemen konfrontiert:
 
 - Das Dataset muss mindestens dreimal täglich aktualisiert werden, um den verschiedenen Aktualisierungszeiten der Datenquellen Rechnung zu tragen.
 - Die Aktualisierungen dauern lange, weil die Daten jedes Mal komplett aktualisiert werden müssen, um alle Änderungen an den Daten in den Quellsystemen zu erfassen.
