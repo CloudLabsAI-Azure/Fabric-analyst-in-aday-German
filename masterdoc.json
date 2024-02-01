@@ -1,1 +1,40 @@
-
+[
+    {
+      "Name": "Fabric-analyst-in-a-day-German",
+      "Language": "German",
+      "Files": [
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-analyst-in-aday-German/main/Lab%200.md",
+          "Order": 1
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-analyst-in-aday-German/main/Lab%201.md",
+          "Order": 2
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-analyst-in-aday-German/main/Lab%202.md",
+          "Order": 3
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-analyst-in-aday-German/main/Lab%203.md",
+          "Order": 4
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-analyst-in-aday-German/main/Lab%204.md",
+          "Order": 5
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-analyst-in-aday-German/main/Lab%205.md",
+          "Order": 6
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-analyst-in-aday-German/main/Lab%206.md",
+          "Order": 7
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-analyst-in-aday-German/main/Lab%207.md",
+          "Order": 8
+        },
+      ]
+    }
+  ]
