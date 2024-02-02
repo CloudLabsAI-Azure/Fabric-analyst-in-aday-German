@@ -423,10 +423,14 @@ Stellen Sie sicher, dass **alle Abfragen verarbeitet werden**. Lassen Sie uns di
 
 14. Sie werden zum Power **Query-Fenster** weitergeleitet. Beachten Sie, dass unten rechts das Datenziel auf **Lakehouse** festgelegt ist.
 15. Legen Sie ebenso das **Datenziel** für die folgenden Abfragen fest: 
-a. Product Details 
-b. Reseller 
-c. Date 
-d. Sales 
+
+    a. Product Details 
+    
+    b. Reseller 
+    
+    c. Date 
+    
+    d. Sales  
 
 16. Wir haben einen Dataflow, der Daten aus ADLS in Lakehouse erfasst. Fahren wir fort und veröffentlichen diesen Dataflow. Wählen Sie unten rechts Veröffentlichen aus. 
 
