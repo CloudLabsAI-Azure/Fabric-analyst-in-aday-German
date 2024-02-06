@@ -175,7 +175,7 @@ In unserem Szenario werden Mitarbeiterdaten nicht planmäßig aktualisiert. Manc
 
 1. Erweitern Sie den Abschnitt **Erweitert**.
 
-1. 	Legen Sie **Wiederholungsintervall (Sek.)** auf **600** fest.
+1. Legen Sie **Wiederholungsintervall (Sek.)** auf **600** fest.
 
 1. Wählen Sie im Menü **Startseite -> Symbol „Speichern“** aus, um die Pipeline zu speichern.
 
@@ -318,8 +318,7 @@ Wir müssen einen Ausdruck schreiben, der so lange ausgeführt wird, bis der Wer
 
     ![](./Media/5.28.png)
 
-1. Ihr Ausdruck sollte folgendermaßen lauten:
-**@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**.
+1. Ihr Ausdruck sollte folgendermaßen lauten: **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**.
 
 1. Wählen Sie **OK** aus.
 
@@ -418,7 +417,7 @@ Nun müssen wir den Zähler festlegen, wenn die Dataflow-Aktivität fehlschlägt
 
 1. Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Geben Sie **@add(variables('varCounter'),1)** ein.
 
-    >**Hinweis:** Sie können diesen Ausdruck gerne eingeben und die Funktionen über das Menü auswählen oder kopieren und einfügen.
+>**Hinweis:** Sie können diesen Ausdruck gerne eingeben und die Funktionen über das Menü auswählen oder kopieren und einfügen.
 
 >**Hinweis:** Diese Funktion legt den Wert der Variablen „varTempCounter“ auf den Wert der Variablen „varCounter“ plus eins (varTempCounter = varCounter + 1) fest.
 
