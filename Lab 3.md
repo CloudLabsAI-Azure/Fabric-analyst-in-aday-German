@@ -154,7 +154,7 @@ Wir müssen City-, State- und Country-Daten aus diesen drei Dateien kombinieren,
  
    **Hinweis:** Stellen Sie unten rechts im Screenshot sicher, dass die Abfrage über vier angewendete Schritte verfügt, und warten Sie, bis sie vollständig geladen ist. Dies kann einige Minuten dauern. 
 
-     ![](./Media/3.17.png)
+   ![](./Media/3.17.png)
 
 Beachten Sie im rechten Bereich unter **Angewendete Schritte**, dass alle Schritte registriert sind. Dieses Verhalten ist mit dem von Power Query identisch. Folgen wir nun einem ähnlichen Prozess, um die Abfrage **Country** zu erstellen. 
 
