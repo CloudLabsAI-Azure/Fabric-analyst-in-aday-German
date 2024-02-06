@@ -239,11 +239,14 @@ Wir werden diesen Bericht als Referenz verwenden. Wir fügen zunächst den Canva
 
 Lassen Sie uns ein Liniendiagramm erstellen, um Sales im Zeitverlauf nach Reseller Company zu visualisieren.
 1. Wählen Sie den **Leerraum** im Canvas aus, um den Fokus vom mehrzeiligen Kartenvisual zu entfernen.
+
 2. Wählen Sie im **Abschnitt Visualisierungen** die Option **Liniendiagramm** aus.
+
 3. Erweitern Sie im **Abschnitt „Daten“** die Tabelle **Date**.
+
 4. Wählen Sie das Feld **Year** aus. Beachten Sie, dass „Year“ standardmäßig summiert und der Y-Achse hinzugefügt wird. Lassen Sie uns dies korrigieren.
-  
-    ![](./Media/7.20.png)
+
+   ![](./Media/7.20.png)
 
 ## Aufgabe 7: Spalte „Year“ in der Tabelle „Date“ konfigurieren
 
