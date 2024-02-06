@@ -142,44 +142,44 @@ Wir müssen City-, State- und Country-Daten aus diesen drei Dateien kombinieren,
 
     **Hinweis:** Hier müssen Sie die  Groß- und Kleinschreibung beachten.
 
-5. 	Wählen Sie **OK** aus.
+5.  Wählen Sie **OK** aus.
 
-    ![](./Media/3.15.png)
+     ![](./Media/3.15.png)
 
-6. 	Daten werden in einer einzelne Zeile gefiltert. Wählen Sie **Binary** unter der Spalte **Content** aus.
+6.  Daten werden in einer einzelne Zeile gefiltert. Wählen Sie **Binary** unter der Spalte **Content** aus.
 
-    ![](./Media/3.16.png)
+     ![](./Media/3.16.png)
 
-7. 	Beachten Sie, dass alle City-Details angezeigt werden. Ändern Sie im **rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name** den Namen in **Cities**. 
+7.  Beachten Sie, dass alle City-Details angezeigt werden. Ändern Sie im **rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name** den Namen in **Cities**. 
  
-    **Hinweis:** Stellen Sie unten rechts im Screenshot sicher, dass die Abfrage über vier angewendete Schritte verfügt, und warten Sie, bis sie vollständig geladen ist. Dies kann einige Minuten dauern. 
+   **Hinweis:** Stellen Sie unten rechts im Screenshot sicher, dass die Abfrage über vier angewendete Schritte verfügt, und warten Sie, bis sie vollständig geladen ist. Dies kann einige Minuten dauern. 
 
-    ![](./Media/3.17.png)
+     ![](./Media/3.17.png)
 
 Beachten Sie im rechten Bereich unter **Angewendete Schritte**, dass alle Schritte registriert sind. Dieses Verhalten ist mit dem von Power Query identisch. Folgen wir nun einem ähnlichen Prozess, um die Abfrage **Country** zu erstellen. 
 
 ## Aufgabe 5: Abfrage „Countries“ erstellen 
 
-1. 	Klicken Sie im linken Bereich **mit der rechten Maustaste auf „ADLS Base Folder“**. Wählen Sie **Verweis** aus, um eine neue Abfrage zu erstellen, die auf die Abfrage „ADLS Base Folder“ verweist. 
+1. Klicken Sie im linken Bereich **mit der rechten Maustaste auf „ADLS Base Folder“**. Wählen Sie **Verweis** aus, um eine neue Abfrage zu erstellen, die auf die Abfrage „ADLS Base Folder“ verweist. 
 
     ![](./Media/3.18.png)
 
-2. 	Wählen Sie den **Dropdown-Pfeil** der **Spalte Folder Path** aus.
-3. 	Wählen Sie **Textfilter -> Enthält…** aus.
+2. Wählen Sie den **Dropdown-Pfeil** der **Spalte Folder Path** aus.
+3. Wählen Sie **Textfilter -> Enthält…** aus.
 
     ![](./Media/3.19.png)
 
-4. 	Geben Sie im **Dialogfeld „Zeilen filtern“ Application.Countries** ein.
+4. Geben Sie im **Dialogfeld „Zeilen filtern“ Application.Countries** ein.
     **Hinweis:** Hierbei muss die Groß-/Kleinschreibung beachtet werden.
-5. 	Wählen Sie **OK** aus. 
+5. Wählen Sie **OK** aus. 
 
     ![](./Media/3.20.png)
 
-6. 	Daten werden in einer einzelne Zeile gefiltert. Wählen Sie **Binary** unter der Spalte **Content** aus.
+6. Daten werden in einer einzelne Zeile gefiltert. Wählen Sie **Binary** unter der Spalte **Content** aus.
 
     ![](./Media/3.21.png)
 
-7. 	Beachten Sie, dass alle Country-Details angezeigt werden. Ändern Sie im **rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name** den Namen in **Countries**.
+7. Beachten Sie, dass alle Country-Details angezeigt werden. Ändern Sie im **rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name** den Namen in **Countries**.
    **Hinweis:** Stellen Sie unten rechts im Screenshot sicher, dass die Abfrage über vier angewendete Schritte verfügt, und warten Sie, bis sie vollständig geladen ist. Dies kann einige Minuten dauern.
 
     ![](./Media/3.22.png)
@@ -188,30 +188,30 @@ Als Nächstes müssen wir „State“ einfügen, aber die Schritte wiederholen s
 
 ## Aufgabe 6: States mit Kopieren – Option 1 erstellen 
 
-1. 	Öffnen Sie **FAIAD.pbix** im Ordner **Report** auf dem **Desktop** Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.  
+1. Öffnen Sie **FAIAD.pbix** im Ordner **Report** auf dem **Desktop** Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.  
 
-2. 	Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
+2. Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
 
     ![](./Media/3.23.png)
 
-3. 	Klicken Sie im linken Bereich unter dem ADLSData-Ordner **mit der rechten Maustaste auf die Abfrage „States“**, und wählen Sie **Kopieren** aus.
+3. Klicken Sie im linken Bereich unter dem ADLSData-Ordner **mit der rechten Maustaste auf die Abfrage „States“**, und wählen Sie **Kopieren** aus.
 
     ![](./Media/3.24.png)
 
-4. 	Navigieren Sie zurück zum **Browser**. Sie sollten sich im Dataflow befinden, an dem wir gearbeitet haben.
-5. 	Wählen Sie im linken Bereich den Bereich **Abfragen** aus, und geben Sie **STRG+V** ein (derzeit wird das Einfügen mit der rechten Maustaste nicht unterstützt).
+4. Navigieren Sie zurück zum **Browser**. Sie sollten sich im Dataflow befinden, an dem wir gearbeitet haben.
+5. Wählen Sie im linken Bereich den Bereich **Abfragen** aus, und geben Sie **STRG+V** ein (derzeit wird das Einfügen mit der rechten Maustaste nicht unterstützt).
 
     ![](./Media/3.25.png)
  
  Beachten Sie, dass „ADLS Base Folder (2)“ ebenfalls kopiert wird. Dies liegt daran, dass sich „States“ auf „ADLS Base Folder“ in Power BI Desktop bezieht, wir aber bereits über „ADLS Base Folder“ verfügen. Lassen Sie uns dies lösen.
 
-6. 	Wählen Sie die Abfrage **States** aus.
-7. 	Wählen Sie im **rechten Bereich** unter **Angewendete Schritte** die Option **Source** aus.
-8. 	Ändern Sie in der Formelleiste #”ADLS Base Folder (2)” in **#”ADLS Base Folder”**.
+6. Wählen Sie die Abfrage **States** aus.
+7. Wählen Sie im **rechten Bereich** unter **Angewendete Schritte** die Option **Source** aus.
+8. Ändern Sie in der Formelleiste #”ADLS Base Folder (2)” in **#”ADLS Base Folder”**.
 
     ![](./Media/3.26.png)
 
-9. 	Klicken Sie auf das **Häkchen** neben der Bearbeitungsleiste, oder drücken Sie die **Eingabetaste**.
+9. Klicken Sie auf das **Häkchen** neben der Bearbeitungsleiste, oder drücken Sie die **Eingabetaste**.
 
     ![](./Media/3.27.png)
 
